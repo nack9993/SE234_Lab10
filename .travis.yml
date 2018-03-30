@@ -11,5 +11,5 @@ script:
 after_success:
 - docker stop htmltest
 - docker rm htmltest
-- docker run -p 2000:88 -d --name htmltest $DOCKER_USERNAME/htmltest:latest
+- docker run -p 8088:88 -d --name htmltest $DOCKER_USERNAME/htmltest:latest
 service: docker
